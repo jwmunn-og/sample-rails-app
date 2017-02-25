@@ -21,7 +21,7 @@ body {
 
 #boxy {
   background: #fff;
-  border-radius: 2px;
+  border-radius: 3px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   width: inherit;
   margin: 0 5vw;
@@ -32,19 +32,27 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
   height: 60vh;
+  border-radius: 3px 0 0 3px;
   @media screen and (max-width: 39.9375em) {
-    height: 40vh;
+    height: 35vh;
+    border-radius: 3px 3px 0 0;
   }
 }
 
 h1 {
   font-weight: 800;
   font-family: 'Exo 2', sans-serif;
+   @media screen and (max-width: 39.9375em) {
+     margin-top: 1rem;
+   }
 }
 
 p {
   font-weight: 300;
   font-size: 125%;
+  @media screen and (max-width: 39.9375em) {
+    font-size: 100%;
+  }
 }
 
 a {
